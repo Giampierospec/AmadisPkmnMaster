@@ -1,0 +1,101 @@
+l<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/tarea3.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tarea 3</title>
+</head>
+<body>
+  <div class="container-fluid">
+
+
+    <form id="form-data-maestro" class="form-horizontal">
+      <fieldset>
+        <legend>Datos del Maestro</legend>
+
+        <div class="form-group">
+          <label for="cd_txt" class="control-label col-sm-2">Cedula: </label>
+          <div class="col-sm-5">
+            <input type="text" id="cd_txt" class="form-control" placeholder="cedula" readonly required/>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="nom_txt" class="control-label col-sm-2">Nombre: </label>
+          <div class="col-sm-5">
+            <input type="text" id="nom_txt" class="form-control" placeholder="nombre" readonly required />
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="ap_txt" class="control-label col-sm-2">Apellido: </label>
+          <div class="col-sm-5">
+            <input type="text" id="ap_txt" class="form-control" placeholder="apellido" readonly required />
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="xp_txt" class="control-label col-sm-2">Experiencia: </label>
+          <div class="col-sm-5">
+            <input type="text" id="xp_txt" readonly value="0" class="form-control" required/>
+          </div>
+        </div>
+        <div id="button_batch">
+          <button type="button" id="nv_button" class="btn btn-default">Nuevo</button>
+          <button type="button" id="sv_button" class="btn btn-default">Guardar</button>
+          <button type="button" id="btn_edit_td" class="btn btn-primary" style="display:none;">Editar</button>
+        </div>
+      </fieldset>
+    </form>
+    <div id="table-scroll">
+        <table class="table " class="table_pkmn" id="table_pkm">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Nivel</th>
+              <th>Experiencia</th>
+            </tr>
+          </thead>
+
+            <tbody id="tb_insert_pkmn">
+              <tr>
+                <td><input type="text" id="nom_pkmn"class="form-control col-sm-4"/></td>
+                <td><input type="number" id="nivel_pkmn"class="form-control col-sm-4"/></td>
+                <td><input type="number" id="xp_pkmn"class="form-control col-sm-4"/></td>
+                <td><button type="button" id="add_pkmn" class="btn btn-default">Agregar</button></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+  </div>
+  <h1>Maestros Registrados</h1>
+  <hr>
+  <table class="table" id="table_prof">
+    <thead>
+      <tr class="active">
+        <th>Cedula</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Experiencia</th>
+        <th>No. Pokemones</th>
+      </tr>
+    </thead>
+    <tbody id="tb_insert_prof">
+
+    </tbody>
+  </table>
+  <script src="js/tarea3.js"></script>
+</body>
+</html>

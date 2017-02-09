@@ -1,0 +1,53 @@
+#form-data-maestro
+{
+  margin-left:5%;
+  margin-top:5%;
+  margin-right:10%;
+  width:30%;
+  display:inline-block;
+  align:left;
+}
+
+
+#table-scroll
+{
+  width:45%;
+  display:none;
+  height:150px;
+  overflow-y:scroll;
+  margin-bottom:8%;
+}
+.table_pkmn
+{
+  display:none;
+  width:97%;
+
+}
+h1
+{
+  margin-left:10%;
+}
+
+hr
+{
+  width:75%;
+  margin-left:10%;
+  background-color: #000;
+  color: #000;
+  border: none;
+  height: 1px;
+}
+#table_prof
+{
+margin-left: 10%;
+width:75%;
+font-family:monospace;
+font-size:17px;
+color: gray;
+}
+
+#button_batch
+{
+  align: center;
+  margin: 10px auto;
+}
